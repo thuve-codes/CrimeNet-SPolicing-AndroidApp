@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gettingstart2">
+
+
+
+    <TextView
+        android:id="@+id/report_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORT"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/alert_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALERT"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/report_text"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/stay_safe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STAY SAFE"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/alert_text"
+        android:layout_marginRight="20dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stay_safe_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-209dp"
+        android:layout_marginTop="507dp"
+        android:background="#50979090"
+        android:text="@string/Crimenet_name"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/getting_started_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
+        android:text="GETTING STARTED"
+        android:textColor="#DD0332"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

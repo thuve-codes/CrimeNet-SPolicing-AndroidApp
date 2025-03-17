@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CrimeNet</string>
+
+    <string name="Crimenet_name">
+        <font color="#FFFFFF">WELCOME TO</font>
+        <font color="#DD0332">CRIME</font>
+        <font color="#001B84">Net</font>
+    </string>
+
 </resources>
+
