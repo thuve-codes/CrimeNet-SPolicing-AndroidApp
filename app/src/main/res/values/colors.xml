@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#5382A9</color>
+    <color name="secondary">#CAAE50</color>
+    <color name="CrimeNet_Blue">#00248F</color>
+
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+    <!-- SOS -->
+    <color name="sos_red">#FF0000</color>
+    <color name="sos_page_red">#D22A3C</color>"
+
+
+    <color name="textPrimary">#212529</color>  <!-- Dark Grayish Blue -->
+    <color name="textSecondary">#6C757D</color>  <!-- Gray -->
+    <color name="buttonPrimary">#28A745</color>  <!-- Green -->
+    <color name="buttonSecondary">#DC3545</color>  <!-- Red -->
+    <color name="alert">#FFC107</color>  <!-- Amber -->
+    <color name="success">#20C997</color>  <!-- Teal -->
+    <color name="warning">#FD7E14</color>  <!-- Orange -->
 </resources>

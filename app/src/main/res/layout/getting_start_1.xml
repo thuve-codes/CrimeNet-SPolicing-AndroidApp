@@ -8,22 +8,23 @@
     <TextView
         android:id="@+id/protect_text"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginBottom="65dp"
-        android:background="#15000000"
+        android:layout_marginTop="450dp"
+        android:background="#4B000000"
+        android:gravity="left"
+        android:padding="20sp"
         android:text="PROTECT\nYOURSELF FROM\nCYBER THREATS!"
-        android:textColor="#FF0000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:textColor="#FFFFFF"
+        android:textSize="29sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/skip_button"
-        android:layout_width="150dp"
+        android:layout_width="162dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/btn_border"
         android:text="SKIP"
         android:textColor="#C5032D"

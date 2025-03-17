@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/getting_start_0">
+
+    <!-- App Logo or Icon -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="CrimeNet Logo"
+        android:layout_marginBottom="20dp"
+        />
+
+    <!-- Headline -->
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Safe. Stay Aware. Report Cybercrime!"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#3C000000"/>
+
+    <!-- Short Description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CrimeNet helps you report cybercrimes, receive alerts, and stay protected in the digital world."
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="0dp" />
+
+
+
+    <!-- Skip Button -->
+
+
+    <!-- Safety Tip (Subtle Message at Bottom) -->
+    <TextView
+        android:id="@+id/safety_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip: Use Two-Factor Authentication to Secure Your Online Accounts."
+        android:textSize="14sp"
+        android:textColor="#80000000"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
+        android:text="Skip"
+        android:textColor="@color/sos_red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="left"/>
+
+</LinearLayout>

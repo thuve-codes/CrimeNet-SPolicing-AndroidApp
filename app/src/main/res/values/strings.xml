@@ -1,11 +1,39 @@
 <resources>
     <string name="app_name">CrimeNet</string>
+    <string name="app_name_wdLogan">CrimeNet – Your Personalized Crime Safety Companion </string>
 
+    <!--Getting Start page-->
     <string name="Crimenet_name">
         <font color="#FFFFFF">WELCOME TO</font>
         <font color="#DD0332">CRIME</font>
         <font color="#001B84">Net</font>
     </string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_welcome">Hello, Welcome to CrimeNet!</string>
+    <string name="report_crime">Report Crime</string>
+    <string name="ask_help">Ask for Help</string>
+    <string name="track_reports">Track Reports</string>
+    <string name="live_alerts">Live Crime Alerts</string>
+    <string name="crime_hotspots">Crime Hotspots Map</string>
+    <string name="emergency_contact">Emergency Contact</string>
+
+    <!-- Terms & Conditions -->
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="agree_terms">By continuing, you agree to our Terms and Conditions.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+
+    <!-- Alerts & Messages -->
+    <string name="error_login">Invalid username or password. Please try again.</string>
+    <string name="success_report">Your crime report has been submitted successfully!</string>
+    <string name="alert_emergency">If this is an emergency, call the police immediately.</string>
+
+
+    <!-- Contact Info -->
+    <string name="contact_us">Contact Us</string>
+    <string name="support_email">support@crimenet.com</string>
+    <string name="website">www.crimenet.com</string>
 
 </resources>
 
