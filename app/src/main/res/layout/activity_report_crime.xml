@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_blue"
+        android:paddingBottom="20dp">
+
+        <!-- Top Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/shape_top">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_back_arrow"
+                android:background="?attr/selectableItemBackground"
+                android:padding="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report a Crime"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help make your community safer by reporting suspicious activity or incidents."
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"/>
+        </RelativeLayout>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can report the incident by uploading a video, sending a voice recording, or typing a brief description. Choose the easiest way for you and help keep the community safe."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:paddingBottom="10dp"/>
+
+            <!-- Incident Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Incident Type *"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/incidentType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:hint="Type here"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_border"/>
+
+            <!-- Date & Time -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date & Time of Incident *"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/dateTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:hint="Select Date & Time"
+                android:focusable="false"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_border"/>
+
+            <!-- Location -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location *"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter Location"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext_border"/>
+
+                <TextView
+                    android:id="@+id/autoFetch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Auto Fetch)"
+                    android:textColor="@color/CrimeNet_Blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <!-- Contact Number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number (Optional)"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Contact Number"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_border"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description *"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"
+                android:hint="Describe the incident"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_border"
+                android:gravity="top"
+                android:inputType="textMultiLine"/>
+
+            <!-- Upload Photo/Video -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo or Video (Optional)"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/light_gray"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Supported File Format: jpg, png, mp4)"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"/>
+            </FrameLayout>
+
+            <!-- Checkboxes -->
+            <CheckBox
+                android:id="@+id/reportAnonymously"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Anonymously"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:id="@+id/sendCopyToEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Copy to Email"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitReport"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_blue"
+                android:text="Submit Report"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

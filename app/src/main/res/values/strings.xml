@@ -8,6 +8,10 @@
         <font color="#DD0332">CRIME</font>
         <font color="#001B84">Net</font>
     </string>
+    <string name="Crimenet">
+        <font color="#DD0332">CRIME</font>
+        <font color="#001B84">Net</font>
+    </string>
 
     <!-- Dashboard -->
     <string name="dashboard_welcome">Hello, Welcome to CrimeNet!</string>
