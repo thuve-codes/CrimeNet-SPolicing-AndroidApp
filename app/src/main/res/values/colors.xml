@@ -6,6 +6,8 @@
 
     <color name="ic_launcher_background">#FFFFFF</color>
 
+    <color name="login_bg">#7AFFFFFF</color>
+
     <!-- SOS -->
     <color name="sos_red">#FF0000</color>
     <color name="sos_page_red">#D22A3C</color>"
