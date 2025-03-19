@@ -13,6 +13,17 @@
         <font color="#001B84">Net</font>
     </string>
 
+
+
+    <string name="btm_copyright1">
+        <font color="#FFFFFF">Copyright © 2025 CrimeNET. All Rights Reserved.</font>
+
+    </string>
+
+    <string name="btm_copyright2">
+        <font color="#FFFFFF">Designed By - Thuverakan IT23281332</font>
+    </string>
+
     <!-- Dashboard -->
     <string name="dashboard_welcome">Hello, Welcome to CrimeNet!</string>
     <string name="report_crime">Report Crime</string>
