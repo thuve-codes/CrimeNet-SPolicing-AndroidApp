@@ -1,22 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
+    <!-- Top Shape -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/shape_top"
-         />
+        android:background="@drawable/shape_top" />
 
-
+    <!-- Bottom Shape -->
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-52dp"
-        android:background="@drawable/shape_bottom"
-     />
+        android:background="@drawable/shape_bottom" />
+
+    <!-- Greeting & Profile Icon -->
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="47dp"
+        android:fontFamily="@font/alfaslabone"
+        android:text="Hello Thuve!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/greetingText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greetingText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Let’s Build a Safer Community Together."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Welcome Text -->
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/tektur"
+        android:text="Welcome to CrimeNet"
+        android:textColor="@color/textBlack"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/welcomeSubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let’s work together to build a safer community."
+        android:textSize="24sp"
+        android:textColor="@color/textBlack"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/welcomeText" />
+
+    <!-- Action Buttons -->
+
+    <!-- Information Section -->
+
+    <LinearLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeSubText"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <Button
+            android:id="@+id/btnReportCrime"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_skyblue_btn_radious_top"
+            android:padding="10dp"
+            android:text="Report Crime" />
+
+        <Button
+            android:id="@+id/btnAskForHelp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_skyblue_btn_radious0"
+            android:padding="10dp"
+            android:text="Ask for Help" />
+
+        <Button
+            android:id="@+id/btnTrackReports"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_skyblue_btn_radious_bottom"
+            android:padding="10dp"
+            android:text="Track Reports" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/bg_main" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-90dp"
+        android:fontFamily="@font/kanit"
+        android:text="See nearby crime reports and hotspots to stay alert and safe."
+        android:textColor="@color/textBlack"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btnLiveAlerts"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_gold_btn"
+        android:backgroundTint="@color/gold"
+        android:fontFamily="@font/tektur"
+        android:text="Live Crime Alerts"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCrimeMap"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Crime Hotspots Map"
+        android:fontFamily="@font/tektur"
+        android:textStyle="bold"
+        android:backgroundTint="@color/gold"
+
+        android:background="@drawable/shape_gold_btn"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btnLiveAlerts"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Footer - Emergency Contact -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCrimeMap"
+        android:layout_marginTop="112dp"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/emergencyContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="EMERGENCY CONTACT"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/copyrightText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergencyContact"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/btm_copyright1"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/copyrightText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/copyrightText1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/btm_copyright2"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/callIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/emergencyContact"
+            android:src="@drawable/ic_call" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

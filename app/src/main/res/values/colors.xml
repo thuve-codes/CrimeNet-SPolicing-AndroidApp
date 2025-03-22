@@ -21,4 +21,13 @@
     <color name="alert">#FFC107</color>  <!-- Amber -->
     <color name="success">#20C997</color>  <!-- Teal -->
     <color name="warning">#FD7E14</color>  <!-- Orange -->
+
+
+        <color name="white">#FFFFFF</color>
+        <color name="blue">#4A90E2</color>
+        <color name="light_blue">#D9EFFF</color>
+        <color name="light_red">#FFD1D1</color>
+        <color name="light_gray">#E0E0E0</color>
+        <color name="gold">#D4AF37</color>
+
 </resources>
