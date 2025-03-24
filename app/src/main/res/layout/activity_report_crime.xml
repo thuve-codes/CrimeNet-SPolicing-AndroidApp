@@ -9,24 +9,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp"
         >
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="160dp"
+            android:background="@drawable/shape_top">
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/shape_top"
-                android:padding="-10dp"/>
+                android:padding="-10dp" />
 
             <ImageView
-            android:layout_width="42dp"
-            android:layout_height="27dp"
-            android:layout_marginTop="14dp"
-            android:src="@drawable/backbtnico" />
+                android:layout_width="42dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/ic_backbtnico" />
 
 
             <TextView
@@ -46,8 +46,9 @@
                 android:id="@+id/textViewDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/Reportcrime"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
                 android:padding="10dp"
                 android:text="Help make your community safer by reporting suspicious activity or incidents."
@@ -71,81 +72,81 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Incident Type *"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"/>
+            android:padding="15dp"
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/incidentType"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/input_field"
+            android:background="@drawable/shape_input_field"
             android:hint="Type here"
-            android:padding="10dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
 
         <TextView
             android:id="@+id/dateTimeLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Location *"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"/>
+            android:padding="15dp"
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/dateTime"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/input_field"
+            android:background="@drawable/shape_input_field"
             android:hint="Select Date and Time"
-            android:padding="10dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Date and Time of Incident *"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"/>
+            android:padding="15dp"
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/locationEntry"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/input_field"
+            android:background="@drawable/shape_input_field"
             android:hint="Enter Incident Location"
             android:padding="10dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contact Number (Optional)"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"/>
+            android:padding="15dp"
+            android:textSize="16sp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/input_field"
+            android:background="@drawable/shape_input_field"
             android:hint="Enter Mobile No"
-            android:padding="10dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Description"
-            android:textSize="16sp"
-            android:layout_marginTop="20dp"/>
+            android:padding="15dp"
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/input_field"
+            android:background="@drawable/shape_input_field"
             android:hint="Enter Description Here"
-            android:padding="10dp"
-            android:layout_marginTop="5dp"/>
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
 
         <Button
             android:id="@+id/uploadPhotoButton"
@@ -155,13 +156,13 @@
             android:textColor="@android:color/white"
             android:background="@android:color/holo_blue_light"
             android:textSize="18sp"
-            android:layout_marginTop="20dp"/>
+            android:layout_margin="10dp"/>
 
         <CheckBox
             android:id="@+id/reportAnonymously"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
             android:text="Report Anonymously"
             android:textSize="14sp" />
 
@@ -170,15 +171,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Send Copy to Email"
-            android:textSize="14sp"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"/>
 
         <Button
             android:id="@+id/submitReport"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/btn_for_login"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_btn_default"
             android:text="Submit Report"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -191,26 +192,28 @@
             android:scaleType="centerCrop"
             android:visibility="gone"
             android:layout_marginTop="20dp"/>
-
-       <!-- TODO: Bottom copyrights not working -->
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/shape_bottom"
-                android:layout_marginTop="50dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btm_copyright1"
-                android:textColor="@color/alert"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btm_copyright2"/>
+                android:padding="30dp"
+                android:paddingTop="25dp"
+                android:text="Copyright © 2025 CrimeNET. All Rights Reserved.\nDesigned By - Thuverakan IT23281332"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
         </RelativeLayout>
+
+
     </LinearLayout>
 
+
 </ScrollView>
+

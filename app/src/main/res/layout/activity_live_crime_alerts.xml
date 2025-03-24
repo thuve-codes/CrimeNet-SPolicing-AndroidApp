@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_top_danger"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_backbtnico"
+            android:contentDescription="Back Button"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="26dp"
+            android:text="Live Crime Alerts"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Live Updates Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latest Crime Reports"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tektur"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Crime Alert List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Robbery Reported - Malabe,Colombo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suspicious Activity - Near Central Park, Batticaloa"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assault Reported - 5th Avenue,Kilinochchi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Emergency Alert Banner -->
+    <TextView
+        android:id="@+id/emergency_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sos_red"
+        android:text="Emergency Alert: High Crime Activity Nearby!"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:gravity="center"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/shape_bottom_danger"
+            android:padding="30dp"
+            android:paddingTop="25dp"
+            android:text="Copyright © 2025 CrimeNET. All Rights Reserved.\nDesigned By - Thuverakan IT23281332"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

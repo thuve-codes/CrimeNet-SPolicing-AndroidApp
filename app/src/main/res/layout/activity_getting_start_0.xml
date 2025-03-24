@@ -62,7 +62,7 @@
         android:id="@+id/skip_btn"
         android:layout_width="199dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_border"
+        android:background="@drawable/shape_btn"
         android:padding="10dp"
         android:text="Skip"
         android:textColor="@color/sos_red"

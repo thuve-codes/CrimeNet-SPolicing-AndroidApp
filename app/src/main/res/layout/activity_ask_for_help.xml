@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header Section -->
+
+
+    <!-- Emergency Text -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:background="@drawable/shape_top_danger"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:contentDescription="Back Button"
+            android:src="@drawable/ic_backbtnico" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="35dp"
+            android:text="Ask for Help"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="2dp"
+            android:padding="8dp"
+            android:text="Need Assistance? We're Here for You."
+
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are You in Emergency"
+
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/tektur"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- SOS Button -->
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <!-- Background Shape -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/shape_sosbtn"
+            android:contentDescription="SOS Button Background"/>
+
+        <!-- Centered SOS Text -->
+        <TextView
+            android:id="@+id/sos_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S O S"
+            android:fontFamily="@font/tektur"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pressing SOS will sound a loud alarm to alert nearby people and automatically send your location to the nearest police and rescue services. Use only in real emergencies."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textBlack"
+        android:padding="16dp"/>
+
+    <!-- Footer Section -->
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/shape_bottom_danger"
+        android:padding="30dp"
+        android:paddingTop="25dp"
+        android:text="Copyright © 2025 CrimeNET. All Rights Reserved.\nDesigned By - Thuverakan IT23281332"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</RelativeLayout>
+</LinearLayout>
