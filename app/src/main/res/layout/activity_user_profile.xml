@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:text="Make Changes"
                 android:textColor="@color/white"
-                android:background="@drawable/shape_btn_default" "/>
+                android:background="@drawable/shape_btn_default"/>
 
             <Button
                 android:id="@+id/btn_delete_account"
