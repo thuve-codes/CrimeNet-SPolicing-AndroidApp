@@ -23,6 +23,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".ReportCrimeActivity" />
+        <activity android:name=".AskForHelpActivity" />
+        <activity android:name=".TrackReportsActivity" />
+        <activity android:name=".LiveAlertsActivity" />
+        <activity android:name=".CrimeMapActivity" />
+
     </application>
 
 </manifest>

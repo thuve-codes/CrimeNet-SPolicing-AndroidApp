@@ -19,7 +19,7 @@
         android:padding="16dp">
 
         <ImageView
-            android:id="@+id/back_button"
+            android:id="@+id/backbtn"
             android:layout_width="33dp"
             android:layout_height="32dp"
             android:contentDescription="Back Button"
@@ -74,6 +74,7 @@
 
         <!-- Background Shape -->
         <ImageView
+            android:id="@+id/sosbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/shape_sosbtn"
