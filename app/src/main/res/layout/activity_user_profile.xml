@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_gray">
+    android:background="@color/white">
 
     <!-- Top Section with Profile Image and Name -->
     <LinearLayout
@@ -41,7 +41,8 @@
         android:layout_margin="16dp"
         android:orientation="vertical"
         android:padding="16dp"
-        android:background="@drawable/shape_input_field"
+        android:background="#19000000"
+
         android:elevation="4dp"
         app:layout_constraintTop_toBottomOf="@id/top_section"
         app:layout_constraintStart_toStartOf="parent"
@@ -179,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:text="(Click to Reset Password)"
                 android:textSize="12sp"
-                android:textColor="@android:color/darker_gray"
+                android:textColor="@color/textBlack"
                 android:paddingStart="8dp"
                 android:layout_marginLeft="30dp"
                 android:layout_below="@id/password"/>

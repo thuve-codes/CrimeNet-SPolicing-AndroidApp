@@ -123,13 +123,8 @@
             android:text="Track Reports" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="180dp"
-        android:src="@drawable/bg_main" />
+
+    <!-- Footer - Emergency Contact -->
 
     <TextView
         android:id="@+id/infoText"
@@ -137,48 +132,55 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="-90dp"
+        android:layout_marginTop="-27dp"
         android:fontFamily="@font/kanit"
         android:text="See nearby crime reports and hotspots to stay alert and safe."
         android:textColor="@color/textBlack"
         android:textSize="19sp" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="344dp"
+        android:src="@drawable/bg_main" />
+
+
+    <Button
+        android:id="@+id/btnCrimeMap"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLiveAlerts"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_gold_btn"
+        android:backgroundTint="@color/gold"
+        android:fontFamily="@font/tektur"
+        android:text="Crime Hotspots Map"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnLiveAlerts"
-        android:layout_width="250dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/infoText"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/infoText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/shape_gold_btn"
         android:backgroundTint="@color/gold"
         android:fontFamily="@font/tektur"
         android:text="Live Crime Alerts"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnCrimeMap"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="Crime Hotspots Map"
-        android:fontFamily="@font/tektur"
-        android:textStyle="bold"
-        android:backgroundTint="@color/gold"
-
-        android:background="@drawable/shape_gold_btn"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/btnLiveAlerts"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
-
-    <!-- Footer - Emergency Contact -->
     <RelativeLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnCrimeMap"
-        android:layout_marginTop="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
         android:padding="16dp">
 
 
@@ -221,8 +223,8 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="106dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="9dp"
             android:layout_toEndOf="@+id/emergencyContact"
             android:src="@drawable/ic_call" />
 
