@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version         = "1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#5382A9</color>
-    <color name="secondary">#CAAE50</color>
-    <color name="CrimeNet_Blue">#00248F</color>
+    <color name       = "primary">#5382A9</color>
+    <color name       = "secondary">#CAAE50</color>
+    <color name       = "CrimeNet_Blue">#00248F</color>
 
-    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name       = "ic_launcher_background">#FFFFFF</color>
 
-    <color name="login_bg">#7AFFFFFF</color>
+    <color name       = "login_bg">#7AFFFFFF</color>
 
     <!-- SOS -->
-    <color name="sos_red">#FF0000</color>
-    <color name="sos_page_red">#D22A3C</color>"
+    <color name       = "sos_red">#FF0000</color>
+    <color name       = "sos_page_red">#D22A3C</color>"
 
-    <color name="textBlack">#E0000000</color>
+    <color name       = "textBlack">#E0000000</color>
 
-    <color name="textPrimary">#212529</color>  <!-- Dark Grayish Blue -->
-    <color name="textSecondary">#6C757D</color>  <!-- Gray -->
-    <color name="buttonPrimary">#28A745</color>  <!-- Green -->
-    <color name="buttonSecondary">#DC3545</color>  <!-- Red -->
-    <color name="alert">#FFC107</color>  <!-- Amber -->
-    <color name="success">#20C997</color>  <!-- Teal -->
-    <color name="warning">#FD7E14</color>  <!-- Orange -->
+    <color name       = "textPrimary">#212529</color>  <!-- Dark Grayish Blue -->
+    <color name       = "textSecondary">#6C757D</color>  <!-- Gray -->
+    <color name       = "buttonPrimary">#28A745</color>  <!-- Green -->
+    <color name       = "buttonSecondary">#DC3545</color>  <!-- Red -->
+    <color name       = "alert">#FFC107</color>  <!-- Amber -->
+    <color name       = "success">#20C997</color>  <!-- Teal -->
+    <color name       = "warning">#FD7E14</color>  <!-- Orange -->
 
 
-        <color name="white">#FFFFFF</color>
-        <color name="blue">#4A90E2</color>
-        <color name="light_blue">#D9EFFF</color>
-        <color name="light_red">#FFD1D1</color>
-        <color name="light_gray">#E0E0E0</color>
-        <color name="gold">#D4AF37</color>
+    <color name   = "white">#FFFFFF</color>
+    <color name   = "blue">#4A90E2</color>
+    <color name   = "light_blue">#D9EFFF</color>
+    <color name   = "light_red">#FFD1D1</color>
+    <color name   = "light_gray">#E0E0E0</color>
+    <color name   = "gold">#D4AF37</color>
 
 </resources>
