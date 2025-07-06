@@ -166,14 +166,14 @@
                     android:layout_marginBottom="8dp" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
                     android:layout_marginBottom="20dp"
                     app:boxStrokeColor="@color/primary_blue"
-                    app:hintTextColor="@color/primary_blue"
-                    app:endIconMode="custom"
                     app:endIconDrawable="@drawable/ic_location"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:endIconMode="custom"
+                    app:hintTextColor="@color/primary_blue">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/locationEntry"
@@ -393,7 +393,6 @@
                             android:id="@+id/removePhotoButton"
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:background="?attr/selectableItemBackgroundBorderless"
                             android:src="@drawable/ic_close"
                             android:tint="@color/secondary_text"
                             tools:ignore="UseAppTint" />

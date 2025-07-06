@@ -12,9 +12,9 @@ class HomeActivity : ComponentActivity() {
         setContentView(R.layout.activity_home)
 
         // Report a Crime
-//        findViewById<View>(R.id.Reportcrime).setOnClickListener {
-//            startActivity(Intent(this, ReportCrimeActivity::class.java))
-//        }
+        findViewById<View>(R.id.Reportcrime).setOnClickListener {
+            startActivity(Intent(this, ReportCrimeActivity::class.java))
+        }
 
         // Ask for Help
 //        findViewById<View>(R.id.askforhelp).setOnClickListener {

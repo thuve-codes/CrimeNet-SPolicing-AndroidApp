@@ -58,7 +58,6 @@
                     android:layout_width="40dp"
                     android:layout_height="48dp"
                     android:layout_marginEnd="8dp"
-                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/ic_notifications"
                     android:tint="#FF000000"
                     tools:ignore="UseAppTint" />
@@ -66,7 +65,6 @@
                 <ImageButton
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/icuser"
                     android:tint="#FF000000"
                     tools:ignore="UseAppTint" />
