@@ -11,9 +11,9 @@ class LoginActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        findViewById<TextView>(R.id.signupText).setOnClickListener {
-            startActivity(Intent(this, SignupActivity::class.java))
-        }
+//        findViewById<TextView>(R.id.signupText).setOnClickListener {
+//            startActivity(Intent(this, SignupActivity::class.java))
+//        }
 
         findViewById<Button>(R.id.loginButton).setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))

@@ -3,8 +3,6 @@ package com.thuve.crimenet
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.activity.ComponentActivity
 
 class MainActivity : ComponentActivity() {
@@ -12,16 +10,17 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_getting_start_0)
 
-        findViewById<Button>(R.id.skip_btn).setOnClickListener {
-            setContentView(R.layout.activity_getting_start_1)
+        val getStartedBtn = findViewById<Button>(R.id.get_started_btn)
+        val skipBtn = findViewById<Button>(R.id.skip_btn)
 
-            findViewById<Button>(R.id.skip_button).setOnClickListener {
-                setContentView(R.layout.activity_getting_start_2)
+        getStartedBtn.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
-                findViewById<Button>(R.id.getting_started_btn).setOnClickListener {
-                    startActivity(Intent(this, LoginActivity::class.java))
-                }
-            }
+        skipBtn.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }

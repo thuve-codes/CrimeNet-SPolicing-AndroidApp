@@ -1,74 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
-    android:background="@drawable/getting_start_0">
+    android:background="@color/surface_color">
 
-    <!-- App Logo or Icon -->
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/logo"
-        android:contentDescription="CrimeNet Logo"
-        android:layout_marginBottom="20dp"
-        />
+    <!-- Background Overlay for Better Contrast -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Headline -->
-    <TextView
-        android:id="@+id/headline"
-        android:layout_width="wrap_content"
+    <!-- Main Content Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_content_card"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Stay Safe. Stay Aware. Report Cybercrime!"
-        android:textSize="22sp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/surface_color"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center">
+
+            <!-- App Logo with Glow Effect -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/primary_light"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/logo"
+                    android:contentDescription="CrimeNet Logo"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- App Name -->
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CrimeNet"
+                android:textSize="32sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Version Badge -->
+            <TextView
+                android:id="@+id/version_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="v2.0 • Security First"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:background="@drawable/version_badge_bg"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Headline with Gradient Text -->
+            <TextView
+                android:id="@+id/headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay Safe. Stay Aware.\nReport Cybercrime!"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description with Better Typography -->
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your trusted companion for cybersecurity. Report incidents, receive real-time alerts, and protect yourself in the digital world."
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Feature Icons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/feature_bg_1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/ic_shield"
+                        android:contentDescription="Shield Protection" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/feature_bg_2"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/ic_alert"
+                        android:contentDescription="Alert System" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/feature_bg_3"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_margin="12dp"
+                        android:src="@drawable/ic_report"
+                        android:contentDescription="Report System" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Safety Tip Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tip_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@color/tip_background"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/main_content_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_lightbulb"
+                android:contentDescription="Tip Icon"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/safety_tip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pro Tip: Enable Two-Factor Authentication on all your accounts for maximum security."
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingExtra="2dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Action Buttons -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center"
-        android:padding="10dp"
-        android:background="#3C000000"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <!-- Short Description -->
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CrimeNet helps you report cybercrimes, receive alerts, and stay protected in the digital world."
-        android:textSize="16sp"
-        android:textColor="@color/primary"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_marginBottom="0dp" />
+        <!-- Skip Button -->
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/button_outline_ripple"
+            android:text="Skip"
+            android:textColor="@color/textBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/get_started_btn"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_primary_ripple"
+            android:text="Get Started"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:stateListAnimator="@null"
+            android:elevation="4dp" />
+
+    </LinearLayout>
 
 
 
-    <!-- Skip Button -->
-
-
-    <!-- Safety Tip (Subtle Message at Bottom) -->
-    <TextView
-        android:id="@+id/safety_tip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tip: Use Two-Factor Authentication to Secure Your Online Accounts."
-        android:textSize="14sp"
-        android:textColor="#80000000"
-        android:gravity="center"
-        android:layout_marginTop="5dp"
-        android:padding="10dp" />
-    <Button
-        android:id="@+id/skip_btn"
-        android:layout_width="199dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shape_btn"
-        android:padding="10dp"
-        android:text="Skip"
-        android:textColor="@color/sos_red"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="left"/>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

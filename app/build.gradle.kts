@@ -40,26 +40,42 @@ android {
 }
 
 dependencies {
+    // ✅ ConstraintLayout from TOML (use one of these)
+    implementation(libs.androidx.constraintlayout)
 
+    // ✅ Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+
+    // ✅ Jetpack Compose BOM and Components
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.constraintlayout)
+
+    // ✅ CardView and RecyclerView
     implementation(libs.androidx.cardview)
     implementation(libs.androidx.recyclerview)
+
+    // ✅ Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+
+    // ✅ Debug only
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    //Google fonts dep
+    // ✅ (Optional) Google Fonts or any other libraries
+
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.10.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
 
 }

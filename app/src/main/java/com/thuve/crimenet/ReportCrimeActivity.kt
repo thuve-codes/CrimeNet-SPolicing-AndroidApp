@@ -1,5 +1,6 @@
 package com.thuve.crimenet
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -12,7 +13,8 @@ class ReportCrimeActivity : ComponentActivity() {
 
         val backBtn: ImageView = findViewById(R.id.backbtn)
         backBtn.setOnClickListener {
-            finish()
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
     }
 }

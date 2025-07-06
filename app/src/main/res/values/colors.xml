@@ -1,11 +1,39 @@
-<?xml version         = "1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name       = "primary">#5382A9</color>
+
+        <!-- Primary Colors -->
+        <color name="primary_blue">#2196F3</color>
+        <color name="primary_blue_dark">#1976D2</color>
+        <color name="primary_blue_light">#BBDEFB</color>
+
+
+        <!-- Text Colors -->
+
+        <!-- Status Colors -->
+        <color name="emergency_red">#F44336</color>
+        <color name="success_green">#4CAF50</color>
+        <color name="alert_red">#FF5722</color>
+
+        <!-- Feature Colors -->
+        <color name="help_orange">#FF9800</color>
+        <color name="track_blue">#2196F3</color>
+        <color name="map_green">#4CAF50</color>
+        <color name="tips_purple">#9C27B0</color>
+        <color name="forum_teal">#009688</color>
+        <color name="settings_gray">#607D8B</color>
+        <color name="community_purple">#673AB7</color>
+
+        <!-- UI Elements -->
+        <color name="divider_color">#E0E0E0</color>
+
+        <!-- Transparent Colors -->
+        <color name="transparent">#00000000</color>
+        <color name="semi_transparent_black">#80000000</color>
+
     <color name       = "secondary">#CAAE50</color>
     <color name       = "CrimeNet_Blue">#00248F</color>
 
     <color name       = "ic_launcher_background">#FFFFFF</color>
-
     <color name       = "login_bg">#7AFFFFFF</color>
 
     <!-- SOS -->
@@ -13,14 +41,16 @@
     <color name       = "sos_page_red">#D22A3C</color>"
 
     <color name       = "textBlack">#E0000000</color>
-
-    <color name       = "textPrimary">#212529</color>  <!-- Dark Grayish Blue -->
-    <color name       = "textSecondary">#6C757D</color>  <!-- Gray -->
-    <color name       = "buttonPrimary">#28A745</color>  <!-- Green -->
-    <color name       = "buttonSecondary">#DC3545</color>  <!-- Red -->
-    <color name       = "alert">#FFC107</color>  <!-- Amber -->
-    <color name       = "success">#20C997</color>  <!-- Teal -->
-    <color name       = "warning">#FD7E14</color>  <!-- Orange -->
+    <color name       = "textPrimary">#212529</color>
+    <color name       = "textSecondary">#6C757D</color>
+    <color name       = "buttonPrimary">#28A745</color>
+    <color name       = "buttonSecondary">#DC3545</color>
+    <color name       = "alert">#FFC107</color>
+    <color name       = "success">#20C997</color>
+    <color name       = "warning">#FD7E14</color>
+    <color name="light_gray_card">#EAEDF1</color>
+    <color name="dark_text">#101518</color>
+    <color name="secondary_text">#5C748A</color>
 
 
     <color name   = "white">#FFFFFF</color>
@@ -29,5 +59,30 @@
     <color name   = "light_red">#FFD1D1</color>
     <color name   = "light_gray">#E0E0E0</color>
     <color name   = "gold">#D4AF37</color>
+
+
+    <!-- Primary Colors -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_light">#E0E7FF</color>
+    <color name="primary_dark">#4338CA</color>
+
+    <!-- Surface Colors -->
+    <color name="surface_color">#FFFFFF</color>
+    <color name="surface_variant">#F8FAFC</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_tertiary">#94A3B8</color>
+
+    <!-- Feature Colors -->
+    <color name="feature_bg_1">#FEF3C7</color>
+    <color name="feature_bg_2">#DBEAFE</color>
+    <color name="feature_bg_3">#D1FAE5</color>
+
+    <!-- Tip Background -->
+    <color name="tip_background">#F0F9FF</color>
+
+
 
 </resources>

@@ -17,12 +17,13 @@ class AskForHelpActivity : ComponentActivity() {
         val sosButton: TextView = findViewById(R.id.sos_button)
 
         backBtn.setOnClickListener {
-            finish() // Goes back to previous screen
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
         }
 
-        sosButton.setOnClickListener {
-            showConfirmationDialog()
-        }
+//        sosButton.setOnClickListener {
+//            showConfirmationDialog()
+//        }
     }
 
     private fun showConfirmationDialog() {

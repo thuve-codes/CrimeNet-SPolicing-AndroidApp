@@ -11,7 +11,7 @@ class LiveAlertsActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_live_crime_alerts)
 
-        val backBtn: ImageView = findViewById(R.id.backbtn)
+        val backBtn: ImageView   = findViewById(R.id.backbtn)
         backBtn.setOnClickListener {
             finish()
         }
